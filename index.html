@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Dice</title>
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="wrapper clearfix" >
+        <div class="setting-icon">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="player-0-panel active-0">
+            <div class="game-panel">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score-0" id="score-0">43</div>
+                <div class="player-0-rolled-1"><h3>Sorry! You rolled 1.</h3></div>
+                <div class="player-current-box-0">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            <div class="rules-panel" style="display:none">
+                <h3>Goal</h3>
+                <p>Be the first player to reach 50 points.</p>
+            </div>
+
+            <div class="setting-panel" style="display:none">
+                <h3>Setting</h3>
+                <div class="input-wrap">
+                    <input class='username-input' type="text" maxlength="12" value="">
+                </div>
+                <button class='button-submit-username'>submit</button>
+                <p>On a turn, a player rolls the die repeatedly until either:</p>
+                <li>1 is rolled</li>
+                <li>The player chooses to hold (stop rolling)</li>
+                <br>
+                <p>If the player chooses to hold, all of the points rolled during that turn are added to his or her score.</p>
+            <button class="btn-back-from-settings"><i class="ion-ios-arrow-left color-0"></i>Back to game</button>
+            </div>	
+        </div>
+        
+    
+        <div class="player-1-panel">
+            <div class="game-panel">
+                <div class="player-name" id="name-1">AI</div>
+                <div class="player-score-1" id="score-1">72</div>
+                <div class="player-1-rolled-1"><h3>Oops! You rolled 1.</h3></div>
+                <div class="player-current-box-1">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>	
+            <div class="rules-panel" style="display:none">
+                <h3>Gameplay</h3>
+                <p>On a turn, a player rolls the die repeatedly until either:</p>
+                <li>1 is rolled</li>
+                <li>The player chooses to hold (stop rolling)</li>
+                <br>
+                <p>If the player chooses to hold, all of the points rolled during that turn are added to his or her score.</p>
+            <button class="btn-back"><i class="ion-ios-arrow-left color-0"></i>Back to game</button>	
+            </div>
+        </div>
+        <div class="game-panel">
+            
+        <button class="btn-new"><i class="fas fa-play-circle"></i>New game</button>
+        <button class="btn-rules"><i class="fas fa-arrow-right"></i>Rules</button>
+        <button class="btn-roll"><i class="fas fa-dice"></i>Roll dice</button>
+        <button class="btn-hold"><i class="fas fa-stop"></i>Hold</button>
+        <!-- <img src="1-dice-5.png" alt="Dice" class="dice"> -->
+
+        <div class="dice"></div>
+        </div>
+
+        <div class="timer">60</div>
+        <div class="counterofturns"></div>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
